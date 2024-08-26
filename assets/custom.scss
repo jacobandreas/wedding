@@ -4,3 +4,47 @@
 body {
   margin: 1em;
 }
+
+nav h2 {
+  float: left;
+  height: 100%;
+  margin: 7px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-wrap: wrap;
+}
+
+#home div {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+#home .names {
+  font-size: 10em;
+}
+
+#home .details {
+  font-size: 3em;
+}
+
+h1 {
+  font-size: 3em;
+}

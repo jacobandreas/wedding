@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav id="nav">
+        <h2>Zuri and Jacob</h2>
+        <ul>
+          {% for item in site.data.nav.pages %}
+            <li>
+              {% if page.url == item.url %}
+                <a href="{{ item.url }}" class="current">{{ item.title }}</a>
+              {% else %}
+                <a href="{{ item.url }}">{{ item.title }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>      
+
+      <article id="content">
+        {{ content }}
+      <article>
+    </div>
+  </body>
+</html>

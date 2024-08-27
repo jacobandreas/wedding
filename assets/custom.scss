@@ -15,19 +15,48 @@ $color5: hsla(22, 34, 33, 1);
 body {
   margin: 1em;
   font-family: "Montserrat", sans-serif;
-  background: $color4;
+  background: url("/assets/images/bg_neutral_light.jpg");
+  background-size: cover;
   color: #222;
 }
 
 #content {
-  background: #fff;
+}
+
+.twopanel {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textpanel {
+  // background: #fff8;
+  // padding: 2em;
   border-radius: 0.5em;
-  border: 2px solid $color3;
-  padding: 2em;
+  // border: 2px solid $color3;
+}
+
+.fullpanel {
+}
+
+.leftpanel {
+  width: 550px;
+  margin-right: 2em;
+}
+
+img.leftpanel {
+  object-fit: cover;
+  height: 500px;
+}
+
+.rightpanel {
+  width: 550px;
+  margin-left: 2em;
 }
 
 nav {
-  padding: 0 2em 0.5em 2em;
+  padding: 1em 2em 0.5em 2em;
 }
 
 nav h2 {
@@ -35,6 +64,7 @@ nav h2 {
   height: 100%;
   margin: 7px 0;
   font-weight: 500;
+  font-family: "Libre Bodoni", serif;
 }
 
 nav ul {
@@ -68,14 +98,23 @@ nav a, nav a:link, nav a:visited {
   text-align: center;
 }
 
-#home .names {
+#home .title {
   font-size: 10em;
   font-family: "Libre Bodoni", serif;
   font-weight: 800;
 }
 
-#home .details {
+#home .subtitle {
   font-size: 3em;
+  margin-bottom: 1em;
+}
+
+#home .details {
+  font-size: 1.5em;
+}
+
+.textpanel .details {
+  font-size: 1.2em;
 }
 
 h1 {
@@ -88,28 +127,8 @@ h1 {
   font-weight: bold;
 }
 
-.left {
-  float: right;
-  width: 33%;
-  aspect-ratio: 1;
-  margin-left: 4em;
-  object-fit: cover;
-}
-
-.right {
-  margin-right: 33%;
-}
-
 p.big {
   font-size: 1.5em;
-}
-
-.clear {
-  clear: both;
-}
-
-img {
-  filter: grayscale(80%);
 }
 
 p.event {
@@ -117,7 +136,11 @@ p.event {
   border: 4px solid $color1;
   background: $color1-light;
   padding: 2em;
-  float: left;
   margin-top: 1em;
   font-weight: 600;
+}
+
+img {
+  filter: grayscale(90%);
+  border-radius: 0.5em;
 }

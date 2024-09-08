@@ -6,5 +6,11 @@ pages:
   - title: Ceremony & Reception
     url: /wedding.html
 
-  - title: Engagement Party
-    url: /engagement.html
+  # - title: Engagement Party
+  #   url: /engagement.html
+
+  - title: Traditions
+    url: /traditions.html
+
+  - title: Somerville
+    url: /somerville.html

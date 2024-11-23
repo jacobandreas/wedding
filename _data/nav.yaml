@@ -9,8 +9,20 @@ pages:
   # - title: Engagement Party
   #   url: /engagement.html
 
-  - title: Traditions
-    url: /traditions.html
+  #- title: Traditions
+  #  url: /traditions.html
+
+  - title: Symposium
+    url: /symposium.html
+
+  - title: Travel
+    url: /travel.html
 
   - title: Somerville
     url: /somerville.html
+
+  - title: FAQs
+    url: /faqs.html
+
+  - title: Gallery
+    url: /gallery.html

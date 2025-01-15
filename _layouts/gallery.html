@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include nav.html %}
+      <article id="content">
+        {{ content }}
+      <article>
+    </div>
+  </body>
+</html>

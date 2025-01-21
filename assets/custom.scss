@@ -15,7 +15,7 @@ body {
   // https://stock.adobe.com/images/neutral-beige-watercolour-background-watercolor-texture-hand-drawn-abstract-illustration-on-white/501009831
   //background: url("/assets/images/bg2.jpg");
   background: url("/assets/images/bg_leaves.jpg") #101710;
-  background-size: cover;
+  background-size: 100%;
   // color: #8ea289;
   color: #aebdaa;
 }
@@ -37,7 +37,7 @@ body {
   justify-content: start;
   flex-direction: column;
   max-width: 1200px;
-  aspect-ratio: 1 / 3.33;
+  aspect-ratio: 1 / 5.2;
   margin: 0 auto;
 }
 

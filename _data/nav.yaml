@@ -24,5 +24,8 @@ pages:
   - title: FAQs
     url: /faqs.html
 
+  - title: Registry
+    url: https://www.zola.com/registry/jacobandzuri
+
   - title: Gallery
     url: /gallery.html

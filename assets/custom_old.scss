@@ -1,8 +1,20 @@
 ---
 ---
 
-//$outline: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
-$outline: 1px 0 black, 0 1px black, -1px 0 black, 0 -1px black, -1px -1px black, -1px 1px black, 1px -1px black, 1px 1px black;
+// $color1: hsla(56, 36, 33, 1);
+// $color1-light: hsla(56, 36, 86, 1);
+// $color2: hsla(28, 25, 53, 1);
+// $color3: hsla(27, 25, 80, 1);
+// $color4: hsla(25, 34, 92, 1);
+// $color5: hsla(22, 34, 33, 1);
+
+$color1: #bcb483;
+$color2: #cba979;
+$color3: #b86830;
+$color4: #c46e58;
+$color5: #6d745c;
+$color5-light: #cfd2c6;
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -13,16 +25,9 @@ body {
   // background: url("/assets/images/bg_neutral_light.jpg");
 
   // https://stock.adobe.com/images/neutral-beige-watercolour-background-watercolor-texture-hand-drawn-abstract-illustration-on-white/501009831
-  //background: url("/assets/images/bg2.jpg");
-  background: url("/assets/images/bg_leaves.jpg") #101710;
-  background-size: 100%;
-  // color: #8ea289;
-  color: #aebdaa;
-}
-
-code {
-  background: #101710;
-  border-color: #203720;
+  background: url("/assets/images/bg2.jpg");
+  background-size: cover;
+  color: #222;
 }
 
 #content {
@@ -34,22 +39,6 @@ code {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-}
-
-#gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  flex-direction: column;
-  max-width: 1200px;
-  aspect-ratio: 1 / 5.2;
-  margin: 0 auto;
-  margin-top: 3em;
-}
-
-#gallery img {
-  max-width: 50%;
-  border-radius: 0;
 }
 
 .textpanel {
@@ -106,16 +95,13 @@ nav ul li {
 }
 
 nav a, nav a:link, nav a:visited {
-  //color: #000;
-  color: #8ea289;
+  color: #000;
   font-weight: 500;
 }
 
 a, a:link, a:visited {
-  //color: $color3;
-  color: #A05339;
-  text-shadow: $outline;
-  font-weight: 600;
+  color: $color3;
+  font-weight: 500;
 }
 
 #home {
@@ -135,21 +121,15 @@ a, a:link, a:visited {
   font-size: 10em;
   font-family: "Libre Bodoni", serif;
   font-weight: 800;
-  color: #b57452;
-  text-shadow: $outline;
 }
 
 #home .subtitle {
   font-size: 3em;
   margin-bottom: 1em;
-  color: #ddd;
 }
 
 #home .details {
   font-size: 1.5em;
-}
-
-#home .details a {
 }
 
 .textpanel .details {
@@ -160,54 +140,26 @@ h1 {
   font-size: 3em;
   font-family: "Libre Bodoni", serif;
   font-weight: 900;
-  color: #b57452;
-  text-shadow: $outline;
 }
 
 #content h2 {
-  font-weight: bold;
-  color: #ddd;
-}
-
-#content h3 {
-  color: #ddd;
   font-weight: bold;
 }
 
 p.big {
   font-size: 1.5em;
-  color: #ddd;
 }
 
 p.event {
   width: 20em;
-  border: 4px solid #8EA289;
-  background: #171D17;
+  border: 4px solid $color5;
+  background: $color5-light;
   padding: 2em;
-  margin-top: 2em;
+  margin-top: 1em;
   font-weight: 400;
 }
 
 img {
+  filter: grayscale(90%);
   border-radius: 0.5em;
-}
-
-.white {
-  color: #ddd;
-}
-
-.white ul {
-  color: #8ea289;
-} 
-
-.leftpanel img {
-  margin: 3em 0;
-}
-
-.details ul li {
-  margin-bottom: 1em;
-}
-
-#faq ul li b:first-child {
-  color: #ddd;
 }
